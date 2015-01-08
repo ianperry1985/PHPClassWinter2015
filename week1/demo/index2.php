@@ -10,8 +10,14 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
+        <?php        
+        $myvar = filter_input(INPUT_GET, 'p');
+        
+         if ( $myvar === '1' ) {
+            echo 'Num 1'; 
+         } else {
+             echo 'my page title';
+         }   
         ?>
     </body>
 </html>
